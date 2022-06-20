@@ -14,6 +14,9 @@ class _WebViewSessionState extends State<WebViewSession> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+          appBar: AppBar(
+            title: Text('Web View Demo'),
+          ),
       body: Container(
         child: Center(
           child: Text('Web View Demo'),
