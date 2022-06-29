@@ -13,11 +13,17 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    /// JS Promise
+    /*return MaterialApp(
+      title: 'Flutter web session',
+      home: WebViewSession(),
+    );*/
+    /// NORMAL ROUTE
+    /*return MaterialApp(
       title: 'Flutter web session',
       routes: NormalRoutes.routes,
       initialRoute: Page1Screen.route,
-    );
+    );*/
     /// GO ROUTER
     return MaterialApp.router(
       routeInformationParser: GoRoutes.router.routeInformationParser,

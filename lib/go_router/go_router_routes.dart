@@ -12,11 +12,15 @@ class GoRoutes {
         builder: (BuildContext context, GoRouterState state) => Page1Screen(),
       ),
       GoRoute(
-        path: '/page2',
+        path: Page1Screen.route,
+        builder: (BuildContext context, GoRouterState state) => Page1Screen(),
+      ),
+      GoRoute(
+        path: Page2Screen.route,
         builder: (BuildContext context, GoRouterState state) => Page2Screen(),
       ),
       GoRoute(
-        path: '/page3',
+        path: Page3Screen.route,
         builder: (BuildContext context, GoRouterState state) => Page3Screen(),
       ),
     ],

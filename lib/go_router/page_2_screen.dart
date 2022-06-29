@@ -14,7 +14,7 @@ class Page2Screen extends StatelessWidget {
           child: InkWell(
             onTap: (){
               Navigator.of(context).pushNamed(Page3Screen.route);
-              // context.go(Page3Screen.route);
+              // context.push(Page3Screen.route);
             },
               onLongPress: (){
                 Navigator.of(context).pushNamed(Page1Screen.route);
