@@ -1,9 +1,5 @@
 class JSHelper {
-  String getPlatformFromJS() {
-    return "mobile";
-  }
-
-  Future<String> callJSPromise() async {
+  Future<String> callJSPromise(String message) async {
     return "mobile";
   }
 }

@@ -1,7 +1,3 @@
-function getPlatform() {
-  return navigator.platform;
-}
-
 async function jsPromiseFunction(message) {
     alert(message)
     let promise = new Promise(function(resolve, reject) {

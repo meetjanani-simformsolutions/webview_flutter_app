@@ -26,17 +26,6 @@ class _WebViewSessionState extends State<WebViewSession> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             MaterialButton(
-              color: Theme.of(context).colorScheme.primary,
-              child: const Text(
-                "Check Platform",
-                style: TextStyle(color: Colors.white),
-              ),
-              onPressed: () {
-                print(_jsHelper.getPlatformFromJS());
-              },
-            ),
-            const SizedBox(height: 16),
-            MaterialButton(
               color: Colors.blue,
               child: const Text(
                 "JS Promise",
@@ -44,7 +33,7 @@ class _WebViewSessionState extends State<WebViewSession> {
               ),
               onPressed: () async {
                 print("Calling JS promise");
-                String dataFromJS = await _jsHelper.callJSPromise();
+                String dataFromJS = await _jsHelper.callJSPromise("Hello JavaScript, from flutter web app");
                 print(dataFromJS);
               },
             ),

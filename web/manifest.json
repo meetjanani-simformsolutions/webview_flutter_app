@@ -1,11 +1,11 @@
 {
-    "name": "Flutter Web APP",
-    "short_name": "PWA",
-    "start_url": ".",
+    "name": "Meet Janani Title",
+    "short_name": "QWE",
+    "start_url": "https://flutterwebappsession.web.app/",
     "display": "standalone",
-    "background_color": "#0ff0000",
+    "background_color": "#ff0000",
     "theme_color": "#ff0000",
-    "description": "A new Flutter project.",
+    "description": "A new Flutter project. description from manifest file",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
