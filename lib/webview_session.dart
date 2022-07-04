@@ -37,6 +37,12 @@ class _WebViewSessionState extends State<WebViewSession> {
                 print(dataFromJS);
               },
             ),
+            SizedBox(height: 10,),
+            Container(
+              color: Colors.pink,
+              height: 100,
+              width: 100,
+            )
           ],
         ),
       ),
