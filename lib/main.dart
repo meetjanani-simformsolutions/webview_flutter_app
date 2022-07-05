@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     /// JS Promise
     return MaterialApp(
       title: 'Flutter web session',
-      home: CoursesPage(),
+      home: WebViewSession(), // CoursesPage()
       builder: responsiveBuilder,
     );
     /// NORMAL ROUTE
@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
       routeInformationParser: GoRoutes.router.routeInformationParser,
       routerDelegate: GoRoutes.router.routerDelegate,
       title: 'Flutter web session',
+      builder: responsiveBuilder,
     );
   }
 
@@ -44,11 +45,6 @@ class MyApp extends StatelessWidget {
       maxWidth: MediaQuery.of(context).size.width,
       defaultScale: true,
       breakpoints: [
-        /*ResponsiveBreakpoint.autoScale(450, name: MOBILE),
-        ResponsiveBreakpoint.autoScale(800, name: TABLET),
-        ResponsiveBreakpoint.autoScale(1000, name: TABLET),
-        ResponsiveBreakpoint.resize(1200, name: DESKTOP),*/
-
         ResponsiveBreakpoint.resize(350, name: MOBILE),
         ResponsiveBreakpoint.autoScale(600, name: TABLET),
         ResponsiveBreakpoint.resize(800, name: DESKTOP),
