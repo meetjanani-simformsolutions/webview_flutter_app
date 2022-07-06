@@ -1,11 +1,11 @@
 {
-    "name": "Meet Janani Title",
-    "short_name": "QWE",
+    "name": "WEBAPP Session",
+    "short_name": "M&M",
     "start_url": "https://flutterwebappsession.web.app/",
     "display": "standalone",
     "background_color": "#ff0000",
     "theme_color": "#ff0000",
-    "description": "A new Flutter project. description from manifest file",
+    "description": "Web app session help by Meet & Milap",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
