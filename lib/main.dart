@@ -17,24 +17,36 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     /// JS Promise
-    return MaterialApp(
+    /*return MaterialApp(
       title: 'Flutter web session',
       home: WebViewSession(), // CoursesPage()
       builder: responsiveBuilder,
-    );
-    /// NORMAL ROUTE
-    return MaterialApp(
-      builder: responsiveBuilder,
-      title: 'Flutter web session',
-      routes: NormalRoutes.routes,
-      initialRoute: Page1Screen.route,
-    );
+    );*/
+
+    /// Manifest File
+
+
     /// GO ROUTER
     return MaterialApp.router(
       routeInformationParser: GoRoutes.router.routeInformationParser,
       routerDelegate: GoRoutes.router.routerDelegate,
       title: 'Flutter web session',
       builder: responsiveBuilder,
+    );
+    /// Responsive UI
+    return MaterialApp(
+      title: 'Flutter web session',
+      home: CoursesPage(),
+      builder: responsiveBuilder,
+    );
+
+// --------------------------------------
+    /// NORMAL ROUTE
+    return MaterialApp(
+      builder: responsiveBuilder,
+      title: 'Flutter web session',
+      routes: NormalRoutes.routes,
+      initialRoute: Page1Screen.route,
     );
   }
 
@@ -45,11 +57,23 @@ class MyApp extends StatelessWidget {
       maxWidth: MediaQuery.of(context).size.width,
       defaultScale: true,
       breakpoints: [
-        ResponsiveBreakpoint.resize(350, name: MOBILE),
+        const ResponsiveBreakpoint.autoScale(550, name: MOBILE),
+        const ResponsiveBreakpoint.autoScale(800, name: TABLET),
+        const ResponsiveBreakpoint.autoScale(1000, name: TABLET),
+        const ResponsiveBreakpoint.resize(1200, name: DESKTOP),
+        /*ResponsiveBreakpoint.resize(350, name: MOBILE),
         ResponsiveBreakpoint.autoScale(600, name: TABLET),
         ResponsiveBreakpoint.resize(800, name: DESKTOP),
-        ResponsiveBreakpoint.autoScale(1700, name: 'XL'),
+        ResponsiveBreakpoint.autoScale(1700, name: 'XL'),*/
       ]
     );
   }
 }
+
+
+/*
+* Flutter Web (JS Promise)
+* Manifest File
+* Go router navigation
+* Responsive UI
+* */

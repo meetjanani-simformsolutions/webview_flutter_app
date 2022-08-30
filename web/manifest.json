@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#ff0000",
     "theme_color": "#ff0000",
-    "description": "Web app session help by Meet & Milap",
+    "description": "Web app session delivered by Meet & Milap",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
